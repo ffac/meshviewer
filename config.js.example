@@ -3,5 +3,54 @@ define({
   "siteName": "Freifunk Lübeck",
   "mapSigmaScale": 0.5,
   "showContact": true,
-  "maxAge": 14
+  "maxAge": 14,
+  "mapLayers": [
+      { "name": "MapQuest",
+        "url": "https://otile{s}-s.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg",
+        "config": {
+          "subdomains": "1234",
+          "type": "osm",
+          "attribution": "Tiles &copy; <a href=\"https://www.mapquest.com/\" target=\"_blank\">MapQuest</a>, Data CC-BY-SA OpenStreetMap",
+          "maxZoom": 18
+        }
+      },
+      {
+        "name": "Stamen.TonerLite"
+      }
+    ]
+    /*,
+    "nodeCharts": [
+      {
+        "name": "Clientstatistik",
+        "data": {
+          "url": function (node) {
+            return "http://137.226.33.62:8086/query?db=nodes&epoch=ms&q=" +
+              "SELECT max(clients) AS clients FROM status WHERE id='" +
+              node.nodeinfo.node_id + "' AND time >= now() - 8h GROUP BY time(30m)"
+          }
+        },
+        "c3": {
+          "data": {
+            "keys": {
+              "x": "time",
+              "value": ["clients"]
+            },
+            "names": {
+              "clients": "Benutzer"
+            }
+          },
+          "lendend": {
+            "show": false
+          },
+          "axis": {
+            "x": {
+              "type": "timeseries",
+              "tick": {
+                "format": "%H:%M"
+              }
+            }
+          }
+        }
+      }
+    ]*/
 })
