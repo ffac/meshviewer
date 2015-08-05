@@ -51,6 +51,12 @@ define({
               "tick": {
                 "format": "%H:%M"
               }
+            },
+            "y": {
+              "min": 0,
+              "padding": {
+                "bottom": 0
+              }
             }
           }
         }
