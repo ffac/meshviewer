@@ -47,6 +47,12 @@ module.exports = function(grunt) {
         dest: "build/",
         cwd: "bower_components/ionicons/"
       },
+      c3: {
+        src: [ "c3.min.css" ],
+        expand: true,
+        dest: "build/",
+        cwd: "bower_components/c3/"
+      },
       leafletImages: {
         src: [ "images/*" ],
         expand: true,
