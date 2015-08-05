@@ -39,7 +39,7 @@ define({
               "value": ["clients"]
             },
             "names": {
-              "clients": "Benutzer"
+              "clients": "Clients"
             }
           },
           "lendend": {
