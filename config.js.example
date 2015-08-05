@@ -30,6 +30,9 @@ define({
           }
         },
         "c3": {
+          "size": {
+            "height" : 240
+          },
           "data": {
             "keys": {
               "x": "time",
