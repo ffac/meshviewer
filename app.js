@@ -15,7 +15,9 @@ require.config({
     "rbush": "../bower_components/rbush/rbush",
     "helper": "../helper",
     "jshashes": "../bower_components/jshashes/hashes",
-    "c3": "../bower_components/c3/c3.min"
+    "c3": "../bower_components/c3/c3.min",
+    "deepmerge": "../bower_components/deepmerge/index"
+
   },
   shim: {
     "leaflet.label": ["leaflet"],
