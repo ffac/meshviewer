@@ -34,6 +34,7 @@
       "offline": false,
       "one": false,
       "online": false,
+      "nodeName": false,
       "showDistance": false,
       "showTq": false,
       "sortByKey": false,
