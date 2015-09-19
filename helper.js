@@ -90,7 +90,11 @@ function has_location(d) {
 }
 
 function nodeName(d, trim) {
-  var name = d.nodeinfo.hostname
+  var name = ''
+  if (d && d.nodeinfo && d.nodeinfo.hostname)
+    name = d.nodeinfo.hostname
+  else if (d && d.nodeinfo && d.nodeinfo.node_id)
+    name = '[' + d.nodeinfo.node_id + ']'
   if (trim && name.length > 48)
     name = name.substring(0,48) + "..."
   return name
