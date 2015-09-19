@@ -17,7 +17,7 @@ define({
     {
       "name": "Stamen.TonerLite"
     }
-  ]
+  ],
   "nodeCharts": [
     {
       "name": "Statistik",
@@ -40,9 +40,9 @@ define({
           if (match)
             id = match[1] + ':' + match[2] + ':' + match[3] + ':' + match[4] + ':' + match[5]+':'+ match[6];
           return [
-            baseUrl + "&target=alias(summarize(freifunk.nodes." + id + ".clientcount,\"" + zoom.config.group + "\",\"max\"),\"clients\")" +
-            "&target=alias(summarize(freifunk.nodes." + id + ".loadavg,\"" + zoom.config.group + "\",\"avg\"),\"load\")" +
-            "&target=alias(summarize(freifunk.nodes." + id + ".uptime,\"" + zoom.config.group + "\",\"last\"),\"uptime\")"
+            baseUrl + "&target=alias(summarize(freifunk.nodes-legacy." + id + ".clientcount,\"" + zoom.config.group + "\",\"max\"),\"clients\")" +
+            "&target=alias(summarize(freifunk.nodes-legacy." + id + ".loadavg,\"" + zoom.config.group + "\",\"avg\"),\"load\")" +
+            "&target=alias(summarize(freifunk.nodes-legacy." + id + ".uptime,\"" + zoom.config.group + "\",\"last\"),\"uptime\")"
           ]
         },
         "format": {
