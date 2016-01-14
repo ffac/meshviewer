@@ -32,5 +32,8 @@
     "Nils Schneider <nils@nilsschneider.net>"
   ],
   "license": "GPL3",
-  "private": true
+  "private": true,
+  "resolutions": {
+    "d3": "~3.5.5"
+  }
 }
